@@ -1,0 +1,45 @@
+<div class="container">
+  <p>AGREGAR EQUIPO</p>
+  <div class="row">
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <label class="form-label">Nombre</label>
+                  <input [(ngModel)]="equipo.nombre" type="text" class="form-control" name="nombre">
+              </div>
+
+              <div class="mb-3">
+                  <label class="form-label">Apellido</label>
+                  <input [(ngModel)]="equipo.apellido" type="text" class="form-control" name="apellido">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Peso inicial</label>
+                <input [(ngModel)]="equipo.peso_inicial" type="text" class="form-control" name="peso_inicial">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Peso Meta</label>
+              <input [(ngModel)]="equipo.peso_meta" type="text" class="form-control" name="peso_meta">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Tallas Iniciales</label>
+            <input [(ngModel)]="equipo.tallas_iniciales" type="text" class="form-control" name="tallas_iniciales">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Tallas Metas</label>
+          <input [(ngModel)]="equipo.tallas_metas" type="text" class="form-control" name="tallas_metas">
+      </div>
+
+
+              <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+          </form>
+      </div>
+
+
+
+
+  </div>
+
+</div>
